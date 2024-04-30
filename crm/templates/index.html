@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="icon" href="{% static 'images/bolt.ico' %}">
+</head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="{% static 'images/logo.png' %}">
+            </div><!--logo-->
+        </header>
+
+        <div class="container" >
+            <a class="links" id="login"></a>
+            
+            <div class="content">      
+            <!--FORMULÁRIO DE LOGIN-->
+                <div id="login">
+                    <form method="post" action=""> 
+                    <h1>Login</h1> 
+                    <p> 
+                        <label for="usuario">Usuário</label>
+                        <input id="usuario" name="usuario" required="required" type="text" placeholder="usuario"/>
+                    </p>
+                    
+                    <p> 
+                        <label for="senha">Senha</label>
+                        <input id="senha" name="senha" required="required" type="password" placeholder="senha" /> 
+                    </p>
+                    
+                    <p> 
+                        <input type="checkbox" name="manterlogado" id="manterlogado" value="" /> 
+                        <label for="manterlogado">Manter-me logado</label>
+                    </p>
+                    
+                    <p> 
+                        <input type="submit" value="Logar" /> 
+                    </p>
+                    
+                    </form>
+                </div><!--div-login-->
+            
+            </div><!--content-->
+            <div class="clear"</div>
+        </div><!--container-->
+
+        <footer>
+            <p>&copy; CRM - {% now "Y" %}. Todos os direitos reservados.</p>
+        </footer>
+    </body>
+</html>
