@@ -1,5 +1,0 @@
-super user: willer
-senha: 991666@Wi
-
-porta db: 5432
-senha: 991666
