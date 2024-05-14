@@ -21,7 +21,7 @@ header {
     justify-content: flex-start;
     align-items: center;
     padding: 10px;
-    background-color: #7e7e7e;
+    background-color: #e3175e;
 }
 
 .logo img {
@@ -181,4 +181,69 @@ footer {
     background-color: #7e7e7e;
     width: 100%;
 }
+
+
+/*Essa parte é para atender a pagina inicial*/
+
   
+.cont {
+  display: flex;
+  justify-content: center; /* Alinha o menu à esquerda */
+  padding: 10px;
+}
+
+/* Estilo da lista de menu (menu) */
+.menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+/* Estilo dos itens da lista de menu (menu li) */
+.menu li {
+  position: relative;
+}
+
+/* Estilo dos links dos itens do menu (menu li a) */
+.menu li a {
+  color: #333;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+/* Estilo do submenu (menu li ul) */
+.menu li ul {
+  position: absolute;
+  top: 100%; /* Posiciona o submenu abaixo do item pai */
+  left: 0;
+  background-color: #fff;
+  display: none;
+  padding: 0;
+  border: 1px solid #ccc;
+  z-index: 1;
+}
+
+/* Estilo dos itens do submenu (menu li ul li) */
+.menu li ul li {
+  display: block;
+  padding: 8px 15px;
+}
+
+/* Estilo do link do submenu (menu li ul li a) */
+.menu li ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Mostra o submenu ao passar o mouse no item pai (menu li:hover ul) */
+.menu li:hover ul {
+  display: block;
+}
+
+/* Estilo do efeito hover nos links do menu */
+.menu li a:hover {
+  background-color: #e3175e;
+  color: #fff;
+  text-shadow: 0px 0px 5px #fff;
+}
